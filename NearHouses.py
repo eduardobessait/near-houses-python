@@ -1,12 +1,18 @@
-import mysql.connector
-import numpy
+# Author: Eduardo Bessa
+# Facebook: http://facebook.com/eduardobessaoficial
+# Instagram: @eduardobessaoficial
+# Github: https://github.com/eduardobessait
+# Project: https://github.com/eduardobessait/near-houses-python
 
-# Configurações do MySQL
+import mysql.connector
+
+#MySQL Configurations
 host = "localhost"
 username = "root"
 password = ""
 database = "urbihouses"
 
+#Database connections
 connectionDatabase = mysql.connector.connect(host=host, user=username, passwd=password)
 cursor = connectionDatabase.cursor()
 
@@ -34,4 +40,3 @@ def fetchHouse():
 
 fetchHouse()
 
-#fetchNearHouses(40.689909, -8.479886)
